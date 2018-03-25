@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Casino</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="scripts.js"></script>
+
+  </head>
+  <body>
+    <p>Coin Flip:</p>
+    <input placeholder="Bet" id="flip_bet_input"></input>
+    <br>
+    <br>
+    <input placeholder="Heads/Tails" id="flip_coin_input"></input>
+    <br>
+    <br>
+    <button id="flip_submit" onclick="flip()">Submit</button>
+
+    <br>
+    <br>
+    <br>
+
+    <p>Dice:</p>
+    <input placeholder="Bet" id="dice_bet_input"></input>
+    <br>
+    <br>
+    <input placeholder="Number of Sides" id="dice_sides_input"></input>
+    <br>
+    <br>
+    <input placeholder="Picked Side" id="dice_side_input"></input>
+    <br>
+    <br>
+    <button id="dice_submit" onclick="rollDice()">Submit</button>
+
+  </body>
+</html>
