@@ -14,6 +14,11 @@ function flip() {
     bet = bet.replace('$','');
   }
   bet = parseFloat(bet).toFixed(2);
+
+  if (getCookie("money") < bet) {
+    alert("You don't have enough money for that! Your current balance is: " + getCookie("money"));
+    return;
+  }
   if (isNaN(parseFloat(bet))) {
     alert("Your bet is invalid.");
   }
@@ -63,6 +68,10 @@ function rollDice() {
     bet = bet.replace('$','');
   }
   bet = parseFloat(bet).toFixed(2);
+  if (getCookie("money") < bet) {
+    alert("You don't have enough money for that! Your current balance is: " + getCookie("money"));
+    return;
+  }
   if (isNaN(parseFloat(bet))) {
     alert("Your bet is invalid.");
   }
